@@ -1,0 +1,12 @@
+//XMLElement* Puser = Proot->FirstChildElement("user");
+	for(int i=0; Puser != nullptr ;i++)
+	{
+		
+		string name = users[i].name;
+		Puser->QueryIntAttribute("name",&users[i].ID);
+		//Puser->QueryStringAttribute("name", &users[i].name);
+		//Puser->QueryStringAttribute("email", &users[i].email);
+		//Puser->QueryAttribute("name",&users[i]);
+	}
+	//if (root == nullptr) return XML_ERROR_PARSING_ELEMENT;
+	
